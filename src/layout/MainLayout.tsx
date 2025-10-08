@@ -9,6 +9,7 @@ import {
   UnstyledButton,
   Stack,
   Image,
+  Menu,
 } from "@mantine/core";
 import {
   ScrollRestoration,
@@ -44,26 +45,26 @@ const MainLayout = () => {
     <>
       <ScrollRestoration />
 
-      <AppShell header={{ height: 70 }} bg="black">
+      <AppShell header={{ height: 150 }} bg="black">
         {/* HEADER */}
         <AppShell.Header
-          bg="#e3e6ed"
+          bg="#f0f1f2"
           withBorder={true}
           style={{
             borderBottom: "1px solid #a7adbb",
           }}
         >
-          <Group h="100%" px="xl" justify="space-between">
+          <Group h="100%" px={100} justify="space-between">
             <Group>
-              <Image src={myrotiplace} alt="my-roti-place" w={60} h={60} />
-              <Image src={mydosaplace} alt="my-roti-place" w={60} h={60} />
+              <Image src={myrotiplace} alt="my-roti-place" w={120} h={120} />
+              <Image src={mydosaplace} alt="my-roti-place" w={120} h={120} />
             </Group>
-            <Burger opened={opened} onClick={toggle} size="sm" />
+            <Burger opened={opened} onClick={toggle} size="lg" />
           </Group>
         </AppShell.Header>
 
         {/* MAIN CONTENT */}
-        <AppShell.Main bg="#e3e6ed">
+        <AppShell.Main bg="#f0f1f2">
           <Outlet />
         </AppShell.Main>
       </AppShell>
@@ -74,19 +75,22 @@ const MainLayout = () => {
         onClose={close}
         // title="Menu"
         padding="md"
-        size="md"
+        size="xl"
         position="right"
         bg='gray'
         overlayProps={{ backgroundOpacity: 0.4, blur: 2 }}
       >
-        <Stack gap="sm">
+        <Stack gap="lg">
+          <Menu>
+            
+          </Menu>
           {MENU_ITEMS.map((item) => (
             <UnstyledButton
               key={item.id}
               onClick={() => handleMenuClick(item.id)}
               style={{
                 textAlign: "left",
-                fontSize: "1.05rem",
+                fontSize: "2.50rem",
                 fontWeight: 500,
                 padding: "6px 0",
               }}
