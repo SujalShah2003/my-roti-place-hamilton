@@ -46,3 +46,9 @@ export const sections = [
     img: stirFry,
   },
 ];
+
+
+export const contacts = [
+  { name: "Deval Shah", contact: "+1 (647) 864 - 5599" },
+  { name: "Jay Shah", contact: "+1 (647) 686 - 6995" },
+];

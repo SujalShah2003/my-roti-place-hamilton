@@ -18,13 +18,14 @@ import {
   useLocation,
 } from "react-router-dom";
 import { MENU_ITEMS } from "../routes/redirect";
+import DrawerMenu from "../components/DrawerMenu";
 
 const MainLayout = () => {
   const [opened, { toggle, close }] = useDisclosure(false);
   const navigate = useNavigate();
   const location = useLocation();
 
-  const handleMenuClick  = (sectionId: string) => {
+  const handleMenuClick = (sectionId: string) => {
     // If not on homepage, go to "/" first, then scroll
     if (location.pathname !== "/") {
       navigate("/");
@@ -59,7 +60,7 @@ const MainLayout = () => {
               <Image src={myrotiplace} alt="my-roti-place" w={120} h={120} />
               <Image src={mydosaplace} alt="my-roti-place" w={120} h={120} />
             </Group>
-            <Burger opened={opened} onClick={toggle} size="lg" />
+            <Burger opened={opened} onClick={toggle} size="xl" />
           </Group>
         </AppShell.Header>
 
@@ -70,36 +71,12 @@ const MainLayout = () => {
       </AppShell>
 
       {/* DRAWER NAVBAR */}
-      <Drawer
+      <DrawerMenu
         opened={opened}
-        onClose={close}
-        // title="Menu"
-        padding="md"
-        size="xl"
-        position="right"
-        bg='gray'
-        overlayProps={{ backgroundOpacity: 0.4, blur: 2 }}
-      >
-        <Stack gap="lg">
-          <Menu>
-            
-          </Menu>
-          {MENU_ITEMS.map((item) => (
-            <UnstyledButton
-              key={item.id}
-              onClick={() => handleMenuClick(item.id)}
-              style={{
-                textAlign: "left",
-                fontSize: "2.50rem",
-                fontWeight: 500,
-                padding: "6px 0",
-              }}
-            >
-              {item.label}
-            </UnstyledButton>
-          ))}
-        </Stack>
-      </Drawer>
+        close={close}
+        handleMenuClick={handleMenuClick}
+      />
+      
     </>
   );
 };
