@@ -40,7 +40,7 @@ const MainLayout = () => {
       <AppShell header={{ height: 150 }} bg="black">
         {/* HEADER */}
         <AppShell.Header
-          bg="#1A1A1A"
+          bg="#f0f1f2"
           withBorder={true}
           style={{
             borderBottom: "1px solid #a7adbb",
@@ -57,12 +57,12 @@ const MainLayout = () => {
               <Image src={mydosaplace} alt="my-roti-place" w={120} h={120} />
             </Group>
 
-            <Burger opened={opened} onClick={toggle} size="xl" color="white" />
+            <Burger opened={opened} onClick={toggle} size="xl" />
           </Group>
         </AppShell.Header>
 
         {/* MAIN CONTENT */}
-        <AppShell.Main bg="#1A1A1A">
+        <AppShell.Main bg="#f0f1f2">
           <Outlet />
         </AppShell.Main>
       </AppShell>
