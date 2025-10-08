@@ -6,7 +6,6 @@ import classicDosa from "../assets/menu/Classic Dosa.png";
 import signatureDosa from "../assets/menu/Signature Dosa.png";
 import friedRice from "../assets/menu/Fried Rice n Noodles.jpg";
 import idlyVadaUttapam from "../assets/menu/Idlyvadauttapam.png";
-import idlyVadaUttapam2 from "../assets/menu/Idlyvadauttapam -2.jpg";
 import stirFry from "../assets/menu/Stir Fry.jpg";
 
 export const sections = [
@@ -42,10 +41,7 @@ export const sections = [
     id: "idly-vada-uttapam",
     img: idlyVadaUttapam,
   },
-  {
-    id: "idly-vada-uttapam",
-    img: idlyVadaUttapam2,
-  },
+  
   {
     id: "stir-fry",
     img: stirFry,
