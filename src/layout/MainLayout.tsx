@@ -1,23 +1,13 @@
 import { useDisclosure } from "@mantine/hooks";
 import myrotiplace from "../assets/logo/my-roti-place.png";
 import mydosaplace from "../assets/logo/my-dosa-place.png";
-import {
-  AppShell,
-  Burger,
-  Drawer,
-  Group,
-  UnstyledButton,
-  Stack,
-  Image,
-  Menu,
-} from "@mantine/core";
+import { AppShell, Burger, Group, Image } from "@mantine/core";
 import {
   ScrollRestoration,
   Outlet,
   useNavigate,
   useLocation,
 } from "react-router-dom";
-import { MENU_ITEMS } from "../routes/redirect";
 import DrawerMenu from "../components/DrawerMenu";
 
 const MainLayout = () => {
@@ -76,7 +66,6 @@ const MainLayout = () => {
         close={close}
         handleMenuClick={handleMenuClick}
       />
-      
     </>
   );
 };
