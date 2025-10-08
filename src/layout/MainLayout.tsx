@@ -40,7 +40,7 @@ const MainLayout = () => {
       <AppShell header={{ height: 150 }} bg="black">
         {/* HEADER */}
         <AppShell.Header
-          bg="#e7e7e7"
+          bg="#f0f1f2"
           withBorder={true}
           style={{
             borderBottom: "1px solid #a7adbb",
@@ -62,7 +62,7 @@ const MainLayout = () => {
         </AppShell.Header>
 
         {/* MAIN CONTENT */}
-        <AppShell.Main bg="#e7e7e7">
+        <AppShell.Main bg="#f0f1f2">
           <Outlet />
         </AppShell.Main>
       </AppShell>
