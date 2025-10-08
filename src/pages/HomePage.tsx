@@ -6,8 +6,8 @@ const HomePage = () => {
   return (
     <>
       {sections.map((section) => (
-        <Container className="scrolltarget" id={section?.id} size="sm"  >
-          <Center bg="green">
+        <Container className="scrolltarget" id={section?.id} size="sm" mb='lg' >
+          <Center>
             <Image
               src={section.img}
               alt={section.id}
