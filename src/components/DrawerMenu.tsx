@@ -46,7 +46,7 @@ const DrawerMenu: React.FC<DrawerMenuProps> = ({
                   <UnstyledButton
                     key={item.id}
                     onClick={() => handleMenuClick(item.id)}
-                    fz="h3"
+                    fz="h2"
                     c="gray.6"
                     fw={200}
                   >
@@ -66,10 +66,10 @@ const DrawerMenu: React.FC<DrawerMenuProps> = ({
               <Stack gap="sm">
                 {contacts.map((item, index) => (
                   <Box mb="md">
-                    <Text fz="h3" c="gray.6" key={index}>
+                    <Text fz="h2" c="gray.6" key={index}>
                       {item.name}
                     </Text>
-                    <Text fz="h3" c="gray.6" key={index}>
+                    <Text fz="h2" c="gray.6" key={index}>
                       {item.contact}
                     </Text>
                   </Box>
