@@ -7,6 +7,7 @@ import {
   Outlet,
   useNavigate,
   useLocation,
+  
 } from "react-router-dom";
 import DrawerMenu from "../components/DrawerMenu";
 
@@ -46,10 +47,16 @@ const MainLayout = () => {
           }}
         >
           <Group h="100%" px={100} justify="space-between">
-            <Group>
+            <Group
+              onClick={() => handleMenuClick("/")}
+              style={{
+                cursor: "pointer",
+              }}
+            >
               <Image src={myrotiplace} alt="my-roti-place" w={120} h={120} />
               <Image src={mydosaplace} alt="my-roti-place" w={120} h={120} />
             </Group>
+
             <Burger opened={opened} onClick={toggle} size="xl" />
           </Group>
         </AppShell.Header>

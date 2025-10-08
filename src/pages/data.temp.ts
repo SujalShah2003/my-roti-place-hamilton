@@ -10,7 +10,7 @@ import stirFry from "../assets/menu/Stir Fry.jpg";
 
 export const sections = [
   {
-    id: "home",
+    id: "/",
     img: home,
   },
   {

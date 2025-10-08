@@ -1,5 +1,4 @@
 export const MENU_ITEMS = [
-  { label: "Home", id: "home" },
   { label: "Appetizers", id: "appetizers" },
   { label: "Indian Street Chat", id: "street-chat" },
   { label: "House of Biryani & Momos", id: "biryani-momos" },
