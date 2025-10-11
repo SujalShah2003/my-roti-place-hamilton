@@ -7,4 +7,10 @@ export const MENU_ITEMS = [
   { label: "Fried Rice & Noodles", id: "fried-rice-noodles" },
   { label: "Idly Vada Uttapam", id: "idly-vada-uttapam" },
   { label: "Stir Fry", id: "stir-fry" },
+  { label: "Vegetarian Roti" , id : "veg-roti"},
+  { label: "Vegan Roti" , id : "vegan-roti"},
+  { label: "Non - Vegetarian Roti" , id : "non-veg-roti"},
+  { label: "Sides ( Naan / Roti )" , id : "sides"},
+  { label: "Drinks" , id : "drinks"},
+  { label: "Desert" , id : "desert"},
 ];

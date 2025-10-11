@@ -7,7 +7,6 @@ import {
   Outlet,
   useNavigate,
   useLocation,
-  
 } from "react-router-dom";
 import DrawerMenu from "../components/DrawerMenu";
 
@@ -37,7 +36,7 @@ const MainLayout = () => {
     <>
       <ScrollRestoration />
 
-      <AppShell header={{ height: 150 }} bg="black">
+      <AppShell header={{ height: { base: 150, md: 80 } }} bg="black">
         {/* HEADER */}
         <AppShell.Header
           bg="#f0f1f2"
@@ -46,23 +45,23 @@ const MainLayout = () => {
             borderBottom: "1px solid #a7adbb",
           }}
         >
-          <Group h="100%" px={100} justify="space-between">
+          <Group h="100%" px={{base:100,md:70}} justify="space-between">
             <Group
               onClick={() => handleMenuClick("/")}
               style={{
                 cursor: "pointer",
               }}
             >
-              <Image src={myrotiplace} alt="my-roti-place" w={120} h={120} />
-              <Image src={mydosaplace} alt="my-roti-place" w={120} h={120} />
+              <Image src={myrotiplace} alt="my-roti-place" w={{base:120,md:60}} h={{base:120,md:60}} />
+              <Image src={mydosaplace} alt="my-roti-place" w={{base:120,md:60}} h={{base:120,md:60}} />
             </Group>
 
-            <Burger opened={opened} onClick={toggle} size="xl" />
+            <Burger opened={opened} onClick={toggle} size={"lg"} />
           </Group>
         </AppShell.Header>
 
         {/* MAIN CONTENT */}
-        <AppShell.Main bg="#f0f1f2">
+        <AppShell.Main bg="#ede2df">
           <Outlet />
         </AppShell.Main>
       </AppShell>
