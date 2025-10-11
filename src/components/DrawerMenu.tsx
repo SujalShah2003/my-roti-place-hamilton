@@ -34,9 +34,9 @@ const DrawerMenu: React.FC<DrawerMenuProps> = ({
       overlayProps={{ backgroundOpacity: 0.4, blur: 2 }}
     >
       <Stack gap="md" mt="md">
-        <Accordion variant="separated" radius="md" multiple>
+        <Accordion defaultValue="menu" variant="separated" radius="md"  >
           {/* --- Food Menu Accordion --- */}
-          <Accordion.Item value="menu" bg="white">
+          <Accordion.Item value="menu" bg="white" >
             <Accordion.Control fz="h1" fw={800}>
               Our Menu
             </Accordion.Control>

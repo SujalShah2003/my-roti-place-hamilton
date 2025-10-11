@@ -23,7 +23,7 @@ const MainLayout = () => {
         document
           .getElementById(sectionId)
           ?.scrollIntoView({ behavior: "smooth" });
-      }, 300);
+      }, 2000);
     } else {
       document
         .getElementById(sectionId)
