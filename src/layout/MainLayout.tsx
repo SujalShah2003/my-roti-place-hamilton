@@ -36,9 +36,10 @@ const MainLayout = () => {
     <>
       <ScrollRestoration />
 
-      <AppShell header={{ height: { base: 150, md: 80 } }} bg="black">
+      <AppShell header={{ height: 20 }} bg="black">
+
         {/* HEADER */}
-        <AppShell.Header
+        {/* <AppShell.Header
           bg="#f0f1f2"
           withBorder={true}
           style={{
@@ -58,7 +59,7 @@ const MainLayout = () => {
 
             <Burger opened={opened} onClick={toggle} size={"lg"} />
           </Group>
-        </AppShell.Header>
+        </AppShell.Header> */}
 
         {/* MAIN CONTENT */}
         <AppShell.Main bg="#ede2df">
