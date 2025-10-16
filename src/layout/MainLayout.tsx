@@ -1,7 +1,7 @@
 import { useDisclosure } from "@mantine/hooks";
-import myrotiplace from "../assets/logo/my-roti-place.png";
-import mydosaplace from "../assets/logo/my-dosa-place.png";
-import { AppShell, Burger, Group, Image } from "@mantine/core";
+// import myrotiplace from "../assets/logo/my-roti-place.png";
+// import mydosaplace from "../assets/logo/my-dosa-place.png";
+import { AppShell, } from "@mantine/core";
 import {
   ScrollRestoration,
   Outlet,
@@ -11,7 +11,7 @@ import {
 import DrawerMenu from "../components/DrawerMenu";
 
 const MainLayout = () => {
-  const [opened, { toggle, close }] = useDisclosure(false);
+  const [opened, {  close }] = useDisclosure(false);
   const navigate = useNavigate();
   const location = useLocation();
 
