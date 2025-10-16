@@ -1,4 +1,4 @@
-import home from "../assets/menu/Home.jpg";
+import home from "../assets/menu/Home.png";
 import appetizers from "../assets/menu/Appetizers.png";
 import streetChat from "../assets/menu/indian street chat.jpg";
 import biryaniMomos from "../assets/menu/House of Biryani  Momos.png";

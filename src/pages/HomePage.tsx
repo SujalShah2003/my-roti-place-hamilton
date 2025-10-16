@@ -1,4 +1,4 @@
-import { Center, Container, Image, useMantineTheme } from "@mantine/core";
+import { Center, Flex, Image, useMantineTheme } from "@mantine/core";
 import "../index.css";
 import { sections } from "./data.temp";
 
@@ -8,19 +8,26 @@ const HomePage = () => {
   return (
     <>
       {sections.map((section) => (
-        <Container
+        <Flex
           key={section.id}
-          className="scrolltarget"
           id={section.id}
-          size="xl"
-          mb="lg"
+          direction="column"
+          align="center"
+          justify="center"
+          pb="lg"
+          className="scrolltarget"
+          mx='auto'
+          w={{base:'100%',md:'50%'}}
           style={{
-            [`@media (max-width: ${theme.breakpoints.xl})`]: {
-              maxWidth: theme.breakpoints.sm, // smaller container on small screens
+            padding: "0 1rem",
+            [`@media (min-width: ${theme.breakpoints.md})`]: {
+              padding: "0 2rem",
+              maxWidth: "900px",
+              margin: "0 auto",
             },
           }}
         >
-          <Center>
+          <Center w="100%">
             <Image
               src={section.img}
               alt={section.id}
@@ -29,10 +36,11 @@ const HomePage = () => {
               style={{
                 boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)",
                 width: "100%",
+                borderRadius: "12px",
               }}
             />
           </Center>
-        </Container>
+        </Flex>
       ))}
     </>
   );
