@@ -5,21 +5,21 @@ import { sections } from "./data.temp";
 const HomePage = () => {
   return (
     <>
-      <Box w="100%" h="100%" bg="#02070e" style={{ overflow: "hidden" }}>
-        <Center w="98%" h="100%">
+      <Box w="100%" h="100%" bg="#02070e">
+        <Center w="100%" h="100%">
           <Stack
             justify="center"
             align="center"
             gap="md"
-            w={{ base: "98%", md: "50%" }}
+            w={{ base: "100%", md: "50%" }}
           >
             {sections.map((section) => (
               <Image
                 src={section.img}
                 alt={section.id}
-                fit="fill"
+                fit="cover"
                 radius="md"
-                w="98%"
+                w='100%'
               />
             ))}
           </Stack>
