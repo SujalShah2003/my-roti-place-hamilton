@@ -33,6 +33,7 @@ import nonVegRoti from "../assets/new-menu/Non-Vegetarian Roti Specials.jpg";
 import sides from "../assets/new-menu/Tasty Companions.jpg";
 import drinks from "../assets/new-menu/Drinks to Delight.jpg";
 import desert from "../assets/new-menu/Dessert Delights.jpg";
+import last from "../assets/new-menu/Last Page.jpg";
 
 export const sections = [
   {
@@ -94,6 +95,10 @@ export const sections = [
   {
     id: "desert",
     img: desert,
+  },
+  {
+    id: "footer",
+    img: last,
   },
 ];
 
