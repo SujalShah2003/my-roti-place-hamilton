@@ -1,18 +1,16 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter } from "react-router-dom";
 
-import MasterLayout from '../layout/MasterLayout';
-import HomePage from '../pages/HomePage';
+import MasterLayout from "../layout/MasterLayout";
+import HomePage from "../pages/HomePage";
 
 export const routes = createBrowserRouter([
   {
     Component: MasterLayout,
     children: [
       {
-     
-            index : true,
-            Component : HomePage
-        
-      }
-    ]
-  }
+        index: true,
+        Component: HomePage,
+      },
+    ],
+  },
 ]);
