@@ -11,7 +11,7 @@ const HomePage = () => {
             justify="center"
             align="center"
             gap="md"
-            w={{ base: "100%", md: "50%" }}
+            w={{ base: "97%", md: "50%" }}
           >
             {sections.map((section) => (
               <Image
@@ -21,7 +21,7 @@ const HomePage = () => {
                 radius="md"
                 style={{
                   boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)",
-                  width: "100%",
+                  width: "97%",
                   borderRadius: "12px",
                 }}
               />
