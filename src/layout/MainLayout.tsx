@@ -62,7 +62,7 @@ const MainLayout = () => {
         </AppShell.Header> */}
 
         {/* MAIN CONTENT */}
-        <AppShell.Main bg="#ede2df">
+        <AppShell.Main bg="#02070e">
           <Outlet />
         </AppShell.Main>
       </AppShell>
