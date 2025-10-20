@@ -62,7 +62,9 @@ const MainLayout = () => {
         </AppShell.Header> */}
 
         {/* MAIN CONTENT */}
-        <AppShell.Main bg="#02070e">
+        <AppShell.Main bg="#02070e" style={{
+          overflowX : 'hidden'
+        }}>
           <Outlet />
         </AppShell.Main>
       </AppShell>
