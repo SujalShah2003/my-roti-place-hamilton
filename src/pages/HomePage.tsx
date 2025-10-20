@@ -18,14 +18,7 @@ const HomePage = () => {
           className="scrolltarget"
           mx='auto'
           w={{base:'100%',md:'50%'}}
-          style={{
-            padding: "0 1rem",
-            [`@media (min-width: ${theme.breakpoints.md})`]: {
-              padding: "0 2rem",
-              maxWidth: "900px",
-              margin: "0 auto",
-            },
-          }}
+          
         >
           <Center w="100%">
             <Image
